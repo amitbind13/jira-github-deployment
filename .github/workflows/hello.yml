@@ -10,13 +10,7 @@ jobs:
     environment: dev   #For Environment
     steps:
       - uses: actions/checkout@master
-      - name: Get Latest Release
-        id: latest_version
-
-
       - name: Example of consumption of the output
         run: |
-
-
           echo "hello world"
 
