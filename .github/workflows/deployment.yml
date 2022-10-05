@@ -1,13 +1,13 @@
 on:
   push:
-    branches: [feat/HP-5]
+    branches: [AC-6]
     
 name: Get Github Release Data
 jobs:
   latest-version:
     name: Get Latest Release
     runs-on: ubuntu-latest
-    
+    environment: stage   #For Environment
     steps:
       - uses: actions/checkout@master
       - name: Get Latest Release
